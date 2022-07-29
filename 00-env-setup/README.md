@@ -18,9 +18,9 @@ To provision the environment:
 [![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://ssh.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/justinjm/google-vertex-ai-examples.git)
 
 
-- Navigate to `~/vertex-ai-labs/00-env-setup/terraform`
+- Navigate to `~/google-vertex-ai-examples/00-env-setup/terraform`
 ```
-LOCAL_DIR=~/vertex-ai-labs
+LOCAL_DIR=~/google-vertex-ai-examples
 cd $LOCAL_DIR/terraform
 ```
 
@@ -57,3 +57,8 @@ You can customize your configuration using the following variables in `terraform
 |install_gpu_driver|No|false|Whether to install a GPU driver|
 |region|No|Set to subnet_region.|GCP region for the GCS bucket and Artifact Registry. It is recommended that the same region is used for all: the bucket, the registry and the Notebook instance. If not provided the `egion` will be set to `subnet_region`.|
 |force_destroy|No|false|Whether to force the removal of the bucket on terraform destroy. **Note that by default the bucket will not be destroyed**.|
+
+
+## Acknowledgements
+
+Original Author: [Rajesh Thallum](https://github.com/RajeshThallam/) - [vertex-ai-labs](https://github.com/RajeshThallam/vertex-ai-labs)
